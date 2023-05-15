@@ -1,0 +1,38 @@
+
+'''Desafio:crie um sistema integrado para cadastro de pacientes num hospital, onde terá 3 opções de ação:
+1 - cadastrar paciente, onde terá como chave no dicionario um id que se autoincrementará ao cadastrar um novo 
+paciente, e o valor será uma lista com as seguintes informações: nome, idade, peso e altura;
+2 - Ver todos os pacientes;
+3 - Apagar paciente;
+0 - Finalizar sistema.
+'''
+
+
+dados_do_paciente={}
+
+print('Bem vindo ao sistema do hospital!')
+escolha=int(input('Digite 1 para cadastrar um paciente, 2. Ver todos os pacientes. 3. Apagar paciente, 4. Finalizar sistema: '))
+
+while escolha==1:
+    id=int(input('Digite o id do paciente:'))
+    nome=input('Digite o nome do usuário: ')
+    idade=int(input('Digite o numero do telefone: '))
+    peso=float(input('Digite seu peso: '))
+    altura=float(input('Digite sua altura: '))
+    dados_do_paciente[id]=nome,idade,peso,altura
+    print('Paciente cadastrado com sucesso')
+    escolha=int(input('Digite 1 para cadastrar um paciente, 2. Ver todos os pacientes. 3. Apagar paciente, 4. Finalizar sistema: '))
+if escolha==2:
+    
+
+    print(dados_do_paciente)
+    escolha=int(input('Digite 1 para cadastrar um paciente, 2. Ver todos os pacientes. 3. Apagar paciente, 4. Finalizar sistema: '))
+
+if escolha==3:
+    id_apagado=int(input('Digite o id do paciente que gostaria de excluir: '))
+    del(dados_do_paciente[id_apagado])
+    print('Paciente apagado com sucesso')
+    print(dados_do_paciente)
+    escolha=int(input('Digite 1 para cadastrar um paciente, 2. Ver todos os pacientes. 3. Apagar paciente, 4. Finalizar sistema: '))
+if escolha==4:
+    print('Finalizando sistema, até a próxima!')   
