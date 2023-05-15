@@ -1,0 +1,25 @@
+
+'''2°: Crie um dicionário que funcionará como uma agenda telefonica, e que ficara adicionando numeros enquanto o usuario quiser.
+'''
+
+
+import pandas as pd
+continuar=1
+lista_de_nomes=[]
+lista_de_numeros=[]
+lista_telefonica={}
+while continuar!=0:
+    nome=input('Digite seu nome: ')
+    telefone=int(input('Digite seu numero de telefone: '))
+    continuar=int(input('Digite 1 para continuar e 0 para parar: '))
+    lista_de_nomes.append(nome)
+    lista_de_numeros.append(telefone)
+
+lista_telefonica={
+    'Nome': lista_de_nomes,
+    'Telefone': lista_de_numeros
+}
+
+
+TABELA=pd.DataFrame(lista_telefonica)
+print(TABELA)
