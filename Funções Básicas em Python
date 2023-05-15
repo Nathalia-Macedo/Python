@@ -1,0 +1,110 @@
+IMC -->
+
+def IMC(peso, altura):
+    imc = peso/(altura*altura)
+    return imc
+peso = float(input(' Digite seu peso: '))
+altura = float(input(' Digite sua altura: '))
+print(IMC(peso,altura))
+
+POSITIVO OU NEGATIVO -->
+
+def PositivoOuNegativo(n):
+    if n>=0:
+        return 'Positivo'
+    else:
+        return 'Negativo'
+n = int(input(' Digite n: '))
+print(PositivoOuNegativo(n))
+
+CONTANDO CARACTERES E ESPAÇOS -->
+
+'''Faça uma função que informe a quantidade de caracteres de uma frase informada por parâmetro.
+'''
+
+def phrase(frase):
+    cont=0
+    cont_espaços=0
+    for i in frase:
+        if i==' ':
+            cont_espaços+=1
+        else:
+            cont+=1
+    return f' Tem {cont} cracteres e {cont_espaços} espaços'
+frase=input('Digite uma frase: ')
+print(phrase(frase))
+
+
+FUNÇÃO CALCULO DO DESCONTO-->
+
+'''Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas
+oferecendo desconto. Faça um programa que permita entrar com o valor de um produto e o
+percentual de desconto e imprimir o novo valor com base no percentual informado. Para fazer o
+cálculo, implemente uma função.
+'''
+
+def descontos():
+    valor=float(input('Digite o valor do produto: '))
+    desconto=int(input('Digite o valor do desconto: '))
+    total_desconto=(valor*desconto)/100
+    return total_desconto
+print(descontos())
+
+FUNÇÃO DOBRO -->
+
+'''programa que leia três números e, para cada um, imprimir o dobro. O cálculo deverá
+ser realizado por uma função e o resultado impresso ao final do programa.
+'''
+numeros=[]
+def funcoes():
+
+        num=int(input('Digite um número: '))
+        num2=int(input('Digite um número: '))
+        num3=int(input('Digite um numero: '))
+        
+        dobro=num*2
+        dobro2=num2*2
+        dobro21=num3*2
+        
+        return dobro, dobro2, dobro21
+
+    
+print(funcoes())
+        
+
+CONTAGEM DE VOGAIS -->
+
+nomes=[]
+letras=['a','e','i','o','u']
+def vogais():
+    cont=0
+
+    nome=(input('Digite seu nome: '))
+    for i in nome:
+        if i=='a':
+            cont+=1
+        elif i=='e':
+            cont+1
+        elif i=='i':
+            cont+=1
+        elif i=='o':
+            cont+=1
+        elif i=='u':
+            cont+=1
+    return(cont)
+print(vogais())
+
+
+
+FUNÇÃO SOMA DE TODOS OS MENORES POSITIVOS -->
+
+'''Escreva uma função que recebe como entrada um número inteiro positivo
+n e retorne a soma de todos os inteiros positivos menores ou iguais a n.
+'''
+numeros=[]
+def inteiro(n):
+    for i in range(1,n+1):
+        numeros.append(i)
+    return sum(numeros)   
+n=int(input('Digite o numero final: '))
+print(inteiro(n))
