@@ -7,6 +7,13 @@ peso = float(input(' Digite seu peso: '))
 altura = float(input(' Digite sua altura: '))
 print(IMC(peso,altura))
 
+
+
+
+
+
+
+
 POSITIVO OU NEGATIVO -->
 
 def PositivoOuNegativo(n):
@@ -16,6 +23,17 @@ def PositivoOuNegativo(n):
         return 'Negativo'
 n = int(input(' Digite n: '))
 print(PositivoOuNegativo(n))
+
+
+
+
+
+
+
+
+
+
+
 
 CONTANDO CARACTERES E ESPAÇOS -->
 
@@ -35,6 +53,15 @@ frase=input('Digite uma frase: ')
 print(phrase(frase))
 
 
+
+
+
+
+
+
+
+
+
 FUNÇÃO CALCULO DO DESCONTO-->
 
 '''Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas
@@ -49,6 +76,16 @@ def descontos():
     total_desconto=(valor*desconto)/100
     return total_desconto
 print(descontos())
+
+
+
+
+
+
+
+
+
+
 
 FUNÇÃO DOBRO -->
 
@@ -70,6 +107,14 @@ def funcoes():
 
     
 print(funcoes())
+        
+        
+        
+        
+        
+        
+        
+        
         
 
 CONTAGEM DE VOGAIS -->
@@ -96,6 +141,11 @@ print(vogais())
 
 
 
+
+
+
+
+
 FUNÇÃO SOMA DE TODOS OS MENORES POSITIVOS -->
 
 '''Escreva uma função que recebe como entrada um número inteiro positivo
@@ -108,3 +158,74 @@ def inteiro(n):
     return sum(numeros)   
 n=int(input('Digite o numero final: '))
 print(inteiro(n))
+
+
+
+
+
+
+
+
+
+FUNÇÃO CONVERSAo DE TEMPO -->
+
+'''1°: Faça uma função que recebe por parâmetro o tempo de duração de uma fábrica expressa em segundos e retorna também por parâmetro esse tempo em horas, minutos e segundos.
+'''
+def Time():
+    tempo_de_duração_da_fabrica=float(input('Digite o tempo de duração de uma fabrica expressa em segundos: '))
+    escolha=int(input('1. Ver tempo em minutos,2.Ver tempo em horas: '))
+    if escolha==1:
+        tempo_em_minutos=tempo_de_duração_da_fabrica/60
+        print(f'O tempo deduração da fábrica expressa em minutos é de {tempo_em_minutos:.1f} minutos')
+    else:
+        tempo_em_horas=tempo_de_duração_da_fabrica/3600
+        
+        print(f'O tempo de duração da fabrica em horas equivale a {tempo_em_horas:.2f} horas')
+print(Time())
+
+
+
+
+
+
+
+
+NOME REVERSO -->
+
+def reversed (name):
+    nameInversed = (str(name)[::-1]);
+    return nameInversed
+name = input('Digite um nome:')
+print(reversed(name))
+
+
+
+
+
+
+
+
+ABASTECIMENTO COM DESCONTO -->
+
+def posto_de_abastecimento(tipo, qtd):
+    if tipo.upper() == 'A' and qtd<=20:
+        valor = qtd*1.90
+        resultado = (3/100)*valor
+        return f' O desconto é no valor de R$ {resultado}'
+    elif tipo.upper() =='A' and qtd>20:
+        valor = qtd*1.90
+        resultado = (4/100)*valor
+        return f' O desconto é no valor de R$ {resultado}'
+    elif tipo.upper() =='G' and qtd<=20:
+        valor = qtd*2.50
+        resultado = (4/100)*valor
+        return f' O desconto é no valor de R${resultado}'
+    elif tipo.upper() =='G' and qtd>20:
+        valor = qtd*2.50
+        resultado = (6/100)*valor
+        return f' O desconto é no valor de R$ {resultado}'
+tipo = input(' Digite A para alcool e G para Gasolina: ')
+qtd = int(input(' Digite a quantidade do combustível escolhido: '))    
+print(posto_de_abastecimento(tipo,qtd))
+
+
