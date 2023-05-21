@@ -1,0 +1,15 @@
+import hashlib
+
+def criptografar_senha(senha):
+    #A frase que vai ser concatenada com a senha e encriptada mais tarde
+    cript = 'Algo que voce pode escolher'
+    senha_com_cript = senha + cript
+    
+    # Usando o Hash sha-256 para encriptar a senha
+    senha_cript = hashlib.sha256(senha_com_cript.encode()).hexdigest()
+    
+    return senha_cript
+senha = input("Digite sua senha: ")
+senha_criptografada = criptografar_senha(senha)
+
+print("Senha criptografada:", senha_criptografada)
