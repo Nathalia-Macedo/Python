@@ -1,0 +1,60 @@
+    Olá, tudo bem?
+    Deixarei aqui meus conhecimentos e exercícios propostos em Python.
+    Estou abordando:
+
+    1.Lógica de programação;
+
+    2. Condicionais;
+
+    3. Laços de Repetição;
+
+    4. Funções -
+        4.1 Funções lambda;
+        4.2 Funções de ordem superior (e.g., map, filter, reduce)
+        4.3 Decorators
+        4.4 Corrotinas
+    5. Listas - List Comprehenshion
+
+
+    6. Tuplas
+
+    7. Dicionários
+
+    8.Conjuntos
+
+    9.Programação Orientada a Objetos
+        9.1 Metaclasse
+
+    10. Aambiente virtual, Automação e Scriping - Seleniun, Pyautogui,scrapy,virtualvenv
+
+    11. Desenvolvimento web - Flask, Django e Request,Beautiful Soup, pilow, openCV,plotly,requests-HTML
+
+    12.Bibliotecas básicas - os, sys, math, datetime, Sympy, random
+
+    13. Bibliotecas para análise de dados - NumPy, Pandas, MatplotLib,SQLAlchemy,seaborn,statsmodels
+
+    14. Bibliotecas para aprendizado de máquina - Scikit-Learn,TensorFlow ,PyTorch,Keras
+
+    Projetos
+    15. Questões Avançadas
+    16. Construção de APIs - Flask Restfull, Django Restfull
+    17. Games com Python - pygame, pygame0
+
+
+
+
+
+
+    ideias de coisas para implementar mas ainda não faço ideia de onde:
+    Manipulação de Contexto com Gerenciadores de Contexto (Context Managers):
+    O uso do bloco with em Python é possível devido aos gerenciadores de contexto,
+    que implementam os métodos __enter__ e __exit__. Isso é frequentemente usado para lidar com recursos, como arquivos ou conexões de banco de dados.
+
+    Introspecção e Reflexão: Python oferece uma ampla gama de funcionalidades para
+    examinar o código em tempo de execução, como a biblioteca inspect, que permite
+    inspecionar objetos, e o módulo __annotations__, que contém as anotações de tipo.
+
+    Manipulação Avançada de Strings e Expressões Regulares:
+    Python possui poderosas capacidades de manipulação de strings
+    e suporta expressões regulares, que são úteis para análise e 
+    manipulação de texto.
